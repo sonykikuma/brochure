@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Lessons Banner</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .banner {
+        width: 600px;
+        max-width: 100%;
+        background: #000;
+        color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 20px;
+        background-image: url("https://img.freepik.com/premium-photo/teacher-demonstrate-attentive-children-code-robots-stem-class-erudition_31965-510481.jpg?semt=ais_hybrid&w=740&q=80");
+        /* url("https://img.freepik.com/free-photo/programming-background-concept_23-2150170137.jpg?semt=ais_hybrid&w=740&q=80"); */
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .banner::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      .banner > * {
+        position: relative;
+        z-index: 2;
+      }
+
+      .instructor-box {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 10px 15px;
+        border-left: 4px solid #fbbc05;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      .instructor-box h3 {
+        color: #fbbc05;
+        font-size: 18px;
+        margin-bottom: 6px;
+      }
+
+      .instructor-box p {
+        font-size: 15px;
+        line-height: 1.4;
+      }
+
+      /* TITLE */
+      .title-section {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .small-title {
+        font-size: 22px;
+        color: #fbbc05;
+      }
+
+      .main-title {
+        font-size: 45px;
+        font-weight: 800;
+        line-height: 40px;
+      }
+
+      .kids {
+        font-size: 20px;
+        color: #fbbc05;
+      }
+
+      /* INFO BOX */
+      .info-box {
+        margin: 20px 0;
+      }
+
+      .info-box h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #fbbc05;
+      }
+
+      .info-box ul {
+        list-style: disc;
+        margin-left: 20px;
+      }
+
+      .info-box li {
+        margin: 6px 0;
+        font-size: 16px;
+      }
+
+      /* DETAILS BOX */
+      .details-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 15px 0;
+      }
+
+      .detail h3 {
+        font-size: 18px;
+        color: #fbbc05;
+      }
+
+      .detail p {
+        font-size: 14px;
+      }
+
+      /* CONTACT */
+      .contact {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .contact h2 {
+        font-size: 22px;
+        color: #fbbc05;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 500px) {
+        .banner {
+          padding: 15px;
+        }
+
+        .main-title {
+          font-size: 32px;
+          line-height: 30px;
+        }
+
+        .info-box li {
+          font-size: 14px;
+        }
+
+        .detail h3 {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="banner">
+      <div class="title-section">
+        <span class="small-title">Online</span>
+        <h1 class="main-title">CODING<br />LESSONS</h1>
+        <span class="kids">For Kids</span>
+      </div>
+      <div class="instructor-box">
+        <h3>Instructor</h3>
+        <p>
+          A well-experienced instructor who has successfully trained more than
+          <strong>200+ international students</strong> through live coding
+          sessions.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>KEY TOPIC</h3>
+        <ul>
+          <li>Fundamental Syntax</li>
+          <li>Logical Thinking</li>
+          <li>Debugging Techniques</li>
+          <li>Project-Based Learning</li>
+          <li>Version Control</li>
+        </ul>
+      </div>
+
+      <div class="details-box">
+        <div class="detail">
+          <h3>⏳ 8 Hours</h3>
+          <p>Per Month</p>
+        </div>
+
+        <div class="detail">
+          <h3>📅 Two classes in a week</h3>
+          <p>Live Classes</p>
+        </div>
+
+        <div class="detail">
+          <h3>🎥 Google Meet</h3>
+          <p>Live Learning</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <p>For More</p>
+        <h2>+91 8962211625</h2>
+      </div>
+    </div>
+  </body>
+</html>
